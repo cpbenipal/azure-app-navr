@@ -5,6 +5,12 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>azure_app_navr</RootNamespace>
+    <ApplicationInsightsResourceId>/subscriptions/b2f13f93-2b99-4526-b9fd-6539299758d6/resourceGroups/az-benipal-rg/providers/microsoft.insights/components/azure-app-navr</ApplicationInsightsResourceId>
+    <UserSecretsId>fcec906f-3507-46d1-a96c-13c7db4df281</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.15.0" />
+  </ItemGroup>
 
 </Project>

@@ -14,6 +14,7 @@ namespace azure_app_navr.Pages
 
         public void OnGet()
         {
+           // throw new Exception("chak error");
         }
     }
 }

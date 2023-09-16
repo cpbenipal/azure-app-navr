@@ -6,15 +6,15 @@ namespace azure_app_navr.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-
-        public IndexModel(ILogger<IndexModel> logger)
+        private readonly IConfiguration _configuration;
+        public IndexModel(ILogger<IndexModel> logger, IConfiguration _configuration )
         {
-            _logger = logger;
+            _logger = logger; this._configuration = _configuration;
         }
 
         public void OnGet()
         {
-
+            ViewData["Greeting"] = _configuration["Greeting"];
         }
     }
 }
